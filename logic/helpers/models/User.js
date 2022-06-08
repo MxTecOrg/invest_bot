@@ -1,8 +1,3 @@
-const wallet = {
-    cwallet: "",
-    dwallet: ""
-};
-
 const UserModel = (DataTypes) => {
     return {
         user_id: {
@@ -17,7 +12,23 @@ const UserModel = (DataTypes) => {
         },
         wallet: {
             type: DataTypes.STRING,
-            defaultValue: JSON.stringify(wallet)
+            defaultValue: ""
+        },
+        dep_wallet: {
+            type: DataTypes.STRING,
+            defaultValue: ""
+        },
+        balance : {
+            type: DataTypes.INTEGER,
+            defaultValue: 0
+        },
+        investments : {
+            type: DataTypes.STRING,
+            defaultValue: "[]"
+        },
+        ref_earn: {
+            type: DataTypes.INTEGER,
+            defaultValue: 0
         },
         referrals: {
             type: DataTypes.STRING,

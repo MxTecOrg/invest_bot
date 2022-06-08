@@ -25,7 +25,9 @@
     "deposit": "Deposit",
     "withdraw": "Withdraw",
     "support": "Support",
+    "settings" : "Ajustes",
     "referral": "Referrals",
     "stadistics": "Stadistics",
-    "calc": "Calc"
+    "calc": "Calc",
+    "active_investments" : "Active investments"
 }

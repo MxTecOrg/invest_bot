@@ -128,12 +128,12 @@ const I = (icon) => {
 };
 
 
-const commandRegexp = (command , right) => {
+const commandRegexp = (command , _right) => {
     let reg = "(\/" + command;
     for(let lang in langs){
         const str = S(lang , command);
-        let left = (right ? "" : I(command) + " ");
-        let right = (right ? " " + I(command) : "");
+        let left = (_right ? "" : I(command) + " ");
+        let right = (_right ? " " + I(command) : "");
         reg += (str != "???" ? "|" + left + str + right : "");
         
     }

@@ -25,7 +25,9 @@
     "deposit" : "Depositar",
     "withdraw": "Retirar",
     "support" : "Soporte",
+    "settings" : "Ajustes",
     "referral" : "Referidos",
     "stadistics" : "Estadísticas",
-    "calc" : "Calculadora"
+    "calc" : "Calculadora",
+    "active_investments" : "Inversiones activas"
 }
