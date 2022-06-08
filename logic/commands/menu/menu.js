@@ -22,15 +22,20 @@ const menu = async (user_id, chat_id) => {
             resize_keyboard: true,
             keyboard: [
                 [
-                    I("invest") + _ + S(lang , "invest"),
-                    S(lang , "status") + _ + I("status")
+                    I("account") + _ + S(lang , "account"),
                 ],
                 [
+                    I("deposit") + _ + S(lang , "deposit"),
                     I("wallet") + _ + S(lang , "wallet"),
-                    S(lang , "referral") + _ + I("referral")
+                    S(lang , "withdraw") + _ + I("withdraw")
                 ],
                 [
-                    I("comunity") + _ + S(lang , "comunity"),
+                    I("referral") + _ + S(lang , "referral"),
+                    I("stadistics") + _ + S(lang , "stadistics"),
+                    S(lang , "calc") + _ + I("calc")
+                ],
+                [
+                    I("support") + _ + S(lang , "support"),
                     S(lang , "settings") + _ + I("settings")
                 ]
             ]

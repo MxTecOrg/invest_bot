@@ -18,7 +18,14 @@
     "ref_levels": "Referral levels",
     "ref_earns": "Referral earnings",
     "admins": "Admins",
-    "wallet": "Wallet",
+    "wallet": "My Wallet",
     "langs": "Languages",
-    "default_lang": "Default language"
+    "default_lang": "Default language",
+    "account": "My Account",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "support": "Support",
+    "referral": "Referrals",
+    "stadistics": "Stadistics",
+    "calc": "Calc"
 }

@@ -18,7 +18,14 @@
     "ref_levels": "Niveles de referencia",
     "ref_earns": "Ganancia de referencia",
     "admins": "Administradores",
-    "wallet": "Billetera",
+    "wallet": "Mi Billetera",
     "langs": "Lenguajes",
-    "default_lang": "Idioma por defecto"
+    "default_lang": "Idioma por defecto",
+    "account" : "Mi Cuenta",
+    "deposit" : "Depositar",
+    "withdraw": "Retirar",
+    "support" : "Soporte",
+    "referral" : "Referidos",
+    "stadistics" : "Estadísticas",
+    "calc" : "Calculadora"
 }

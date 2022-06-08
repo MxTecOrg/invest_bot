@@ -128,10 +128,14 @@ const I = (icon) => {
 };
 
 
-const commandRegxp = (command) => {
+const commandRegexp = (command , right) => {
     let reg = "(\/" + command;
     for(let lang in langs){
-        reg += "|" + S(lang , langs[lang][command]);
+        const str = S(lang , command);
+        let left = (right ? "" : I(command) + " ");
+        let right = (right ? " " + I(command) : "");
+        reg += (str != "???" ? "|" + left + str + right : "");
+        
     }
     reg += ")";
     return new RegExp(reg , "i");
@@ -153,6 +157,6 @@ module.exports = {
     },
     S,
     I,
-    commandRegxp,
+    commandRegexp,
     Op
 }

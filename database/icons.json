@@ -1,10 +1,13 @@
 {
-    "invest" : "💵",
+    "account" : "💻",
+    "deposit" : "📥",
+    "withdraw" : "📤",
     "menu" : "🖥️",
-    "status" : "🧾",
+    "stadistics" : "📊",
+    "calc" : "🧮",
     "referral" : "👤",
     "back" : "↩️",
-    "comunity" : "💌",
+    "support" : "💌",
     "settings" : "⚙️",
     "wallet" : "💳"
 }
