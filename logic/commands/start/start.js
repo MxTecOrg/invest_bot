@@ -25,16 +25,17 @@ bot.onText(/^\/start.*/, async (data) => {
     };
     let count = 1;
     let _langs = [];
-    for(let lang of Lang.getLang()){
+    for(let lang of Lang.getLangs()){
         if(count == 4){
             count = 0;
             opts.reply_markup.inline_keyboard.push(_langs);
+            _langs = [];
         }
-        _langs.push(S(lang , "flag"));
+        _langs.push({text : S(lang , "flag") , callback_data : "start_lang " + lang});
         count++;
     };
     if(_langs.length > 0) opts.reply_markup.inline_keyboard.push(_langs);
-
+    
     if (!user) {
         if (!newUser[user_id]) {
             newUser[user_id] = {
@@ -75,6 +76,8 @@ bot.on("callback_query", async (data) => {
                 });
             }
         }
+        const admin = await User.findAll();
+        if(admin.length < 1) BotDB.set("admins" , [user_id]);
         const user = await User.create({
             user_id: user_id,
             chat_id: chat_id,

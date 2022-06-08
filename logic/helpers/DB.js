@@ -94,10 +94,10 @@ const _set = (key , value) => {
 var langs = {};
 
 const load_langs = () => {
-    const _langs = fs.readDirSync(config.LOGIC + "/langs/");
+    const _langs = fs.readdirSync(config.DB + "/langs/");
     for(let l of _langs){
         try{
-            langs[l.replace(".json" , "")] = fs.readFileSync(config.DB + "/langs/" + l);
+            langs[l.replace(".json" , "")] = JSON.parse(fs.readFileSync(config.DB + "/langs/" + l , "utf-8"));
         }catch(err){
             console.log(err);
         }
@@ -109,7 +109,22 @@ const getLangs = () => {
 };
 
 const S = (lang , key) => {
+    
     return (langs[lang] ? (langs[lang][key] ? langs[lang][key] : "???") : "???");
+};
+
+
+/*********************
+ * Database de icons *
+ *********************/
+var icons;
+
+const iload = () => {
+    icons = JSON.parse(fs.readFileSync(config.DB + "/icons.json" , "utf-8"));
+};
+
+const I = (icon) => {
+    return (icons[icon] ? icons[icon] : "❓");
 };
 
 module.exports = {
@@ -121,8 +136,12 @@ module.exports = {
     },
     Lang : {
         getLangs,
-        load
+        load : load_langs
+    },
+    Icons : {
+        load : iload
     },
     S,
+    I,
     Op
 }
