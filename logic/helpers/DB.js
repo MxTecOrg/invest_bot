@@ -9,7 +9,7 @@ const UserModel = require("./models/User.js");
 const sequelize = new Sequelize({
     dialect: 'sqlite',
     storage: config.DB + '/database.db',
-    loggin: false
+    logging: false
 });
 
 (async () => {
