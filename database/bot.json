@@ -1,0 +1,27 @@
+{
+    "name" : "Sin Nombre",
+    "email" : "",
+    "contact": "",
+    "currency" : "TRX",
+    "total_users" : 0,
+    "total_withdraw" : 0,
+    "total_invested" : 0,
+    "total_funds" : 0,
+    "withdraw_fee" : 0,
+    "min_withdraw" : 0,
+    "miners" : [{
+            "name" : "Miner PX31",
+            "pic" : "m1_pic",
+            "cost" : 0,
+            "earn" : 0,
+            "time" : 0
+        }
+    ],
+    "ref_levels" : 1,
+    "ref_earns" : [5],
+    "admins" : [],
+    "wallet" : "",
+    "langs" : ["es" , "en"],
+    "default_lang" : "es",
+    "last_flush" : 0
+}
