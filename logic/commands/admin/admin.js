@@ -5,7 +5,7 @@ const { User , BotDB , I , S } = require(config.LOGIC + "/helpers/DB.js");
 bot.onText(/\/admin/ , async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
-    if(!BotDB.get("admins").includes(user_id)) return;
+    if(!BotDB.get().admins.includes(user_id)) return;
     
     const user = await User.findOne({
         where : {

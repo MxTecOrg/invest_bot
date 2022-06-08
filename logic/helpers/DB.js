@@ -127,6 +127,16 @@ const I = (icon) => {
     return (icons[icon] ? icons[icon] : "❓");
 };
 
+
+const commandRegxp = (command) => {
+    let reg = "(\/" + command;
+    for(let lang in langs){
+        reg += "|" + S(lang , langs[lang][command]);
+    }
+    reg += ")";
+    return new RegExp(reg , "i");
+};
+
 module.exports = {
     User,
     BotDB : {
@@ -143,5 +153,6 @@ module.exports = {
     },
     S,
     I,
+    commandRegxp,
     Op
 }

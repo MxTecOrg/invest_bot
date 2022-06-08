@@ -1,7 +1,7 @@
 const config = require("../../../config.js");
 const fs = require("fs");
 const bot = require(config.DIRNAME + "/main.js");
-const { User, BotDB, Lang, S, I, Op } = require(config.LOGIC + "/helpers/DB.js");
+const { User, BotDB, Lang, S, I, Op , commandRegexp } = require(config.LOGIC + "/helpers/DB.js");
 const _ = " ";
 
 const menu = async (user_id, chat_id) => {
@@ -42,7 +42,8 @@ const menu = async (user_id, chat_id) => {
     bot.sendMessage(chat_id, menu_str, opts);
 };
 
-bot.onText(/(\/menu| Atrás ↩️)/, async (data) => {
+
+bot.onText(commandRegexp("menu"), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
 
