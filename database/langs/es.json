@@ -19,7 +19,7 @@
     "ref_levels": "Niveles de referencia",
     "ref_earns": "Ganancia de referencia",
     "admins": "Administradores",
-    "wallet": "Mi Billetera",
+    "wallet": "Billetera",
     "langs": "Lenguajes",
     "default_lang": "Idioma por defecto",
     "account" : "Mi Cuenta",
@@ -36,7 +36,11 @@
     "menu": "Menu",
     "add_wallet_desc" : "💡 Su billetera _CURRENCY_ configurada actualmente es: \n _WALLET_ \nSe utilizará para todos los retiros futuros.",
     "set_wallet": "Establecer Billetera",
-    "insert_wallet" : "Inserte la dirección de la billetera de _CURRENCY_ ",
+    "insert_wallet" : "Inserte la dirección de la billetera de *_CURRENCY_* ",
     "wallet_saved" : "Billetera guardada.",
-    "wrong_wallet" : "Dirección incorrecta."
+    "wrong_wallet" : "Dirección incorrecta.",
+    "deposit_desc" : "Cada depósito realizado a la siguiente dirección de *_CURRENCY_* será reconocido automáticamente como inversión:\n💳 Dirección: `_WALLET_` \n💵 Moneda: *_CURRENCY_* \n➖ Mínimo depósito: `_MIN_DEPOSIT_` *_CURRENCY_* \n➕ Máximo depósito: `_MAX_DEPOSIT_` *_CURRENCY_* \n💰 Ganancia diaria: `_DAILY_EARN_` % \n⏳ Tiempo de contrato: `_INVEST_TIME_`  \n💸 Ganancias totales: `_PLAN_EARN_` *_CURRENCY_*",
+    "undefined": "Indefinido",
+    "days": "Dias",
+    "month": "Mes"
 }

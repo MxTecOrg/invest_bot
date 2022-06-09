@@ -26,8 +26,8 @@ const wallet = async (user_id, chat_id) => {
 
     const str = I("wallet") + _ + S(lang, "wallet") + ": \n\n" +
         S(lang, "add_wallet_desc")
-        .replace(/\_CURRENCY\_/g, currency)
-        .replace(/\_WALLET\_/g, (user.wallet == "" ? "Ninguna" : user.wallet));
+        .replace(/_CURRENCY_/g, currency)
+        .replace(/_WALLET_/g, (user.wallet == "" ? "Ninguna" : user.wallet));
     bot.sendMessage(chat_id, str, opts);
 }
 

@@ -19,7 +19,7 @@
     "ref_levels": "Referral levels",
     "ref_earns": "Referral earnings",
     "admins": "Admins",
-    "wallet": "My Wallet",
+    "wallet": "Wallet",
     "langs": "Languages",
     "default_lang": "Default language",
     "account": "My Account",
@@ -36,7 +36,11 @@
     "menu": "Menu",
     "add_wallet_desc": "💡 Your _CURRENCY_ wallet active currently: \n _WALLET_ \nIt will be used in the future for withdrawals.",
     "set_wallet": "Set Wallet",
-    "insert_wallet" : "Insert your _CURRENCY_ wallet address ",
-    "wallet_saved" : "Wallet saved",
-    "wrong_wallet" : "Wrong wallet address."
+    "insert_wallet": "Insert your _CURRENCY_ wallet address ",
+    "wallet_saved": "Wallet saved",
+    "wrong_wallet": "Wrong wallet address.",
+    "deposit_desc": "Every deposit to the next *_CURRENCY_* address will be recognized as an investment:\n💳 Addresss: `_WALLET_` \n💵 Currency: *_CURRENCY_* \n➖ Min deposit: `_MIN_DEPOSIT_` *_CURRENCY_* \n➕ Max deposit: `_MAX_DEPOSIT_` *_CURRENCY_* \n💰 Daily earn: `_DAILY_EARN_` % \n⏳ Contract time: `_INVEST_TIME_`  \n💸 Total earns: `_PLAN_EARN_` *_CURRENCY_*",
+    "undefined": "Undefined",
+    "days": "Days",
+    "month": "Month"
 }

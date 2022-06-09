@@ -12,6 +12,7 @@
     "min_invest" : 10,
     "max_invest" : 1000,
     "invest_time" : -1,
+    "earn" : 5,
     "ref_levels" : 1,
     "ref_earns" : [5],
     "admins" : [],
