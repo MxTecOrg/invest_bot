@@ -2,6 +2,7 @@
     "lang": "English",
     "flag": "🇬🇧",
     "start_lang": "To proceed to the bot please select your language.",
+    "not_account": "This account doesnt exists , please type the command /start",
     "name": "Name",
     "email": "Email",
     "contact": "Contact",
@@ -25,9 +26,17 @@
     "deposit": "Deposit",
     "withdraw": "Withdraw",
     "support": "Support",
-    "settings" : "Ajustes",
+    "settings": "Ajustes",
     "referral": "Referrals",
     "stadistics": "Stadistics",
     "calc": "Calc",
-    "active_investments" : "Active investments"
+    "active_investments": "Active investments",
+    "user": "User",
+    "balance": "Balance",
+    "menu": "Menu",
+    "add_wallet_desc": "💡 Your _CURRENCY_ wallet active currently: \n _WALLET_ \nIt will be used in the future for withdrawals.",
+    "set_wallet": "Set Wallet",
+    "insert_wallet" : "Insert your _CURRENCY_ wallet address ",
+    "wallet_saved" : "Wallet saved",
+    "wrong_wallet" : "Wrong wallet address."
 }

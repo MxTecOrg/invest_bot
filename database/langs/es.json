@@ -2,6 +2,7 @@
     "lang": "Español",
     "flag": "🇪🇸",
     "start_lang": "Para continuar al bot por favor seleccione su idioma.",
+    "not_account": "Esta cuenta no existe , para crear una presione el comando /start",
     "name": "Nombre",
     "email": "Correo",
     "contact": "Contacto",
@@ -29,5 +30,13 @@
     "referral" : "Referidos",
     "stadistics" : "Estadísticas",
     "calc" : "Calculadora",
-    "active_investments" : "Inversiones activas"
+    "active_investments" : "Inversiones activas",
+    "user": "Usuario",
+    "balance": "Balance",
+    "menu": "Menu",
+    "add_wallet_desc" : "💡 Su billetera _CURRENCY_ configurada actualmente es: \n _WALLET_ \nSe utilizará para todos los retiros futuros.",
+    "set_wallet": "Establecer Billetera",
+    "insert_wallet" : "Inserte la dirección de la billetera de _CURRENCY_ ",
+    "wallet_saved" : "Billetera guardada.",
+    "wrong_wallet" : "Dirección incorrecta."
 }
