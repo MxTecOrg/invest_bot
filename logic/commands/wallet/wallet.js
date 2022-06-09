@@ -34,7 +34,7 @@ const wallet = async (user_id, chat_id) => {
 bot.onText(commandRegexp("wallet"), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
-
+    console.log("aqui");
     wallet(user_id, chat_id);
 });
 
