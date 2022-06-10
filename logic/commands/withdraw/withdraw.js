@@ -19,7 +19,7 @@ const withdraw = async (user_id, chat_id) => {
     const wallet = user.wallet;
     const balance = user.balance;
     const currency = Bot.currency;
-    const min_invest = Bot.min_invest;
+    const min_withdraw = Bot.min_withdraw;
     
     if(user.wallet == "") return Wallet(user_id , chat_id);
     
