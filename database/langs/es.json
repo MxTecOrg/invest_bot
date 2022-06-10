@@ -39,7 +39,7 @@
     "insert_wallet" : "Inserte la dirección de la billetera de *_CURRENCY_* ",
     "wallet_saved" : "Billetera guardada",
     "wrong_wallet" : "Dirección incorrecta",
-    "deposit_desc" : "Cada depósito realizado a la siguiente dirección de *_CURRENCY_* será reconocido automáticamente como inversión:\n💳 Dirección: `_WALLET_` \n💵 Moneda: *_CURRENCY_* \n➖ Mínimo depósito: `_MIN_DEPOSIT_` *_CURRENCY_* \n➕ Máximo depósito: `_MAX_DEPOSIT_` *_CURRENCY_* \n💰 Ganancia diaria: `_DAILY_EARN_` % \n⏳ Tiempo de contrato: `_INVEST_TIME_`  \n💸 Ganancias totales: `_PLAN_EARN_` *_CURRENCY_* \n\n*Nota:* \n_Si la suma incumple las sumas establecidas será rechazada",
+    "deposit_desc" : "Cada depósito realizado a la siguiente dirección de *_CURRENCY_* será reconocido automáticamente como inversión:\n💳 Dirección: `_WALLET_` \n💵 Moneda: *_CURRENCY_* \n➖ Mínimo depósito: *_MIN_DEPOSIT_ _CURRENCY_* \n➕ Máximo depósito: *_MAX_DEPOSIT_ _CURRENCY_* \n💰 Ganancia diaria: *_DAILY_EARN_ %* \n⏳ Tiempo de contrato: *_INVEST_TIME_*  \n💸 Ganancias totales: *_PLAN_EARN_ _CURRENCY_* \n\n*Nota:* \nSi la suma incumple las sumas establecidas será perdida",
     "undefined": "Indefinido",
     "days": "Dias",
     "month": "Mes",

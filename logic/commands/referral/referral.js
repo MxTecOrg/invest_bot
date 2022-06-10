@@ -23,7 +23,7 @@ const referral = async (user_id, chat_id) => {
 
 
     const opts = {
-        parse_mode: "MarkdownV2"
+        
     };
 
     const str = I("referral") + _ + S(lang , "referral") + ": \n\n" +

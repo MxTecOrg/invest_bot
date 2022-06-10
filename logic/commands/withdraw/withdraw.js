@@ -20,6 +20,7 @@ const withdraw = async (user_id, chat_id) => {
     const balance = user.balance;
     const currency = Bot.currency;
     const min_withdraw = Bot.min_withdraw;
+    const fee = Bot.withdraw_fee;
     
     if(user.wallet == "") return Wallet(user_id , chat_id);
     
@@ -38,7 +39,8 @@ const withdraw = async (user_id, chat_id) => {
     .replace(/_WALLET_/g , wallet)
     .replace(/_CURRENCY_/g , currency)
     .replace(/_BALANCE_/g , balance)
-    .replace(/_MIN_WITHDRAW_/g , min_withdraw);
+    .replace(/_MIN_WITHDRAW_/g , min_withdraw)
+    .replace(/_FEE_/g , fee);
     bot.sendMessage(chat_id , str , opts);
 };
 
@@ -48,10 +50,10 @@ bot.on("callback_query", async (data) => {
     const user_id = data.from.id;
     const chat_id = data.message.chat.id;
     const mess_id = data.message.message_id;
-    bot.deleteMessage(chat_id, mess_id);
+    
 
     if (data.data != "withdraw") return;
-
+    bot.deleteMessage(chat_id, mess_id);
 
     const user = await User.findOne({
         where: {

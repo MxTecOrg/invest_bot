@@ -33,7 +33,7 @@ const stadistics = async (user_id, chat_id) => {
     bot.sendMessage(chat_id, str, opts);
 };
 
-bot.onText(commandRegexp("stadistics" , true) , async(data) => {
+bot.onText(commandRegexp("stadistics") , async(data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
     

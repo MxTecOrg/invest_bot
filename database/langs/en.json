@@ -39,7 +39,7 @@
     "insert_wallet": "Insert your _CURRENCY_ wallet address ",
     "wallet_saved": "Wallet saved",
     "wrong_wallet": "Wrong wallet address",
-    "deposit_desc": "Every deposit to the next *_CURRENCY_* address will be recognized as an investment:\n💳 Addresss: `_WALLET_` \n💵 Currency: *_CURRENCY_* \n➖ Min deposit: `_MIN_DEPOSIT_` *_CURRENCY_* \n➕ Max deposit: `_MAX_DEPOSIT_` *_CURRENCY_* \n💰 Daily earn: `_DAILY_EARN_` % \n⏳ Contract time: `_INVEST_TIME_`  \n💸 Total earns: `_PLAN_EARN_` *_CURRENCY_*",
+    "deposit_desc": "Every deposit to the next *_CURRENCY_* address will be recognized as an investment:\n💳 Addresss: `_WALLET_` \n💵 Currency: *_CURRENCY_* \n➖ Min deposit: *_MIN_DEPOSIT_ _CURRENCY_* \n➕ Max deposit: *_MAX_DEPOSIT_ _CURRENCY_* \n💰 Daily earn: *_DAILY_EARN_ %* \n⏳ Contract time: *_INVEST_TIME_*  \n💸 Total earns: *_PLAN_EARN_ _CURRENCY_*\n\n*Note:*\nIf the sum doesnt meet our conditions it will be losed.",
     "undefined": "Undefined",
     "days": "Days",
     "month": "Month",
