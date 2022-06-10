@@ -8,3 +8,6 @@ require(config.LOGIC + "/commands/myaccount/myaccount.js");
 require(config.LOGIC + "/commands/deposit/deposit.js");
 require(config.LOGIC + "/commands/wallet/wallet.js");
 require(config.LOGIC + "/commands/withdraw/withdraw.js");
+require(config.LOGIC + "/commands/referral/referral.js");
+require(config.LOGIC + "/commands/stadistics/stadistics.js");
+require(config.LOGIC + "/commands/calc/calc.js");

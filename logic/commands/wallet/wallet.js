@@ -19,9 +19,10 @@ const wallet = async (user_id, chat_id) => {
     const opts = {
         reply_markup: {
             inline_keyboard: [
-                { text: I("waller") + _ + S(lang, "set_wallet"), callback_data: "set_wallet" }
+                [{ text: I("wallet") + _ + S(lang, "set_wallet"), callback_data: "set_wallet" }]
             ]
-        }
+        },
+        parse_mode : "MarkdownV2"
     };
 
     const str = I("wallet") + _ + S(lang, "wallet") + ": \n\n" +
@@ -34,7 +35,7 @@ const wallet = async (user_id, chat_id) => {
 bot.onText(commandRegexp("wallet"), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
-    console.log("aqui");
+    
     wallet(user_id, chat_id);
 });
 
@@ -61,10 +62,10 @@ bot.on("callback_query", async (data) => {
 
 
     set_wallet[user_id] = true;
-    bot.sendMessage(chat_id, I("edit") + _ + S(lang, "insert_wallet"));
+    bot.sendMessage(chat_id, I("edit") + _ + S(lang, "insert_wallet").replace(/_CURRENCY_/g , BotDB.get().currency) , {parse_mode : "MarkdownV2"});
 });
 
-bot.on("message" , (data) => {
+bot.on("message" , async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
     

@@ -22,7 +22,7 @@ const deposit = async (user_id, chat_id) => {
     const max_invest = Bot.min_invest;
     const invest_time = (Bot.invest_time < 0 ? S(lang , "undefined") : Bot.invest_time + _ + S(lang , "days"));
     const daily_earn = Bot.earn;
-    const plan_earn = (Bot.invest_time < 0 ? (30 * daily_earn) + "/" + S(lang , "month") : (Bot.invest_time * daily_earn) + "/" + Bot.invest_time + "-" + S(lang , "days"))
+    const plan_earn = (Bot.invest_time < 0 ? (30 * daily_earn) + "%/" + S(lang , "month") : (Bot.invest_time * daily_earn) + "%/" + Bot.invest_time + "-" + S(lang , "days"))
     
     if(user.wallet == "") return Wallet(user_id , chat_id);
     
@@ -30,12 +30,12 @@ const deposit = async (user_id, chat_id) => {
     S(lang , "deposit_desc")
     .replace(/_WALLET_/g , wallet)
     .replace(/_CURRENCY_/g , currency)
-    .replace(/_MIN_INVEST_/g , min_invest)
-    .replace(/_MAX_INVEST_/g , max_invest)
+    .replace(/_MIN_DEPOSIT_/g , min_invest)
+    .replace(/_MAX_DEPOSIT_/g , max_invest)
     .replace(/_INVEST_TIME_/g , invest_time)
     .replace(/_DAILY_EARN_/g , daily_earn)
     .replace(/_PLAN_EARN_/g , plan_earn);
-    bot.sendMessage(chat_id , str);
+    bot.sendMessage(chat_id , str , {parse_mode : "MarkdownV2"});
 }
 
 bot.onText(commandRegexp("deposit") , async(data) => {

@@ -25,11 +25,11 @@ const myaccount = async (user_id, chat_id , username) => {
     
     const str = I("account") + _ + S(lang , "account") + ":\n\n" +
     I("user") + _ + S(lang , "user") + ": " + username + "\n" +
-    I("balance") + _ + S(lang , "balance") + ": " + user.balance + _ + currency + "\n" +
-    I("wallet") + _ + S(lang , "active_investments") + ": " + active_investments + _ + currency + "\n" +
-    I("referral") + _ + S(lang , "ref_earns") + ": " + user.ref_earn + _ + currency;
+    I("balance") + _ + S(lang , "balance") + ": `" + user.balance + "`" + _ + currency + "\n" +
+    I("wallet") + _ + S(lang , "active_investments") + ": `" + active_investments + "`" + _ + currency + "\n" +
+    I("referral") + _ + S(lang , "ref_earns") + ": `" + user.ref_earn + "`" + _ + currency;
     
-    bot.sendMessage(chat_id , str);
+    bot.sendMessage(chat_id , str , {parse_mode : "MarkdownV2"});
 }
 
 bot.onText(commandRegexp("account") , async(data) => {

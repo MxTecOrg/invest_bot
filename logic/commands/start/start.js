@@ -85,6 +85,7 @@ bot.on("callback_query", async (data) => {
             referredBy: referredBy
         });
         if (!user) return bot.sendMessage(chat_id, "Error");
+        BotDB.set("total_users" , BotDB.get().total_users + 1);
 
         menu(user_id, chat_id);
 

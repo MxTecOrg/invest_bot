@@ -42,5 +42,13 @@
     "deposit_desc": "Every deposit to the next *_CURRENCY_* address will be recognized as an investment:\n💳 Addresss: `_WALLET_` \n💵 Currency: *_CURRENCY_* \n➖ Min deposit: `_MIN_DEPOSIT_` *_CURRENCY_* \n➕ Max deposit: `_MAX_DEPOSIT_` *_CURRENCY_* \n💰 Daily earn: `_DAILY_EARN_` % \n⏳ Contract time: `_INVEST_TIME_`  \n💸 Total earns: `_PLAN_EARN_` *_CURRENCY_*",
     "undefined": "Undefined",
     "days": "Days",
-    "month": "Month"
+    "month": "Month",
+    "withdraw_desc": "The withdrawal of funds is made automatically to your *_CURRENCY_* address :\n💳 Wallet: `_WALLET_`\n💰 Balance: *_BALANCE_ _CURRENCY_*\n➖ Min withdraw:  *_MIN_WITHDRAW_*\n💸 Withdraw fee: *_FEE_ _CURRENCY_*",
+    "make_withdraw": "Insert the amount to withdraw:",
+    "payment_done": "Payment done",
+    "not_funds": "Not enought funds to make the withdraw",
+    "wrong_sum": "Wrong sum",
+    "withdrawed": "Withdraw success",
+    "referral_desc": "👥 Users invited: *_REF_*\n🔗 Link : _REF_LINK_ \n📑 Reference levels: *_REF_LVL_*\n💰 Earnings: *_REF_EARN_*",
+    "stadistics_desc": "👥 Total Users: *_TOTAL_USERS_*\n➕Total invests: *_TOTAL_INVEST_ _CURRENCY_*\n➖ Total withdraw: *_TOTAL_WITHDRAW_ _CURRENCY_*"
 }
