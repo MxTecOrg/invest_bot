@@ -1,7 +1,8 @@
 {
     "name" : "sin_nombre_bot",
-    "email" : "",
-    "contact": "",
+    "email" : "correodeprueba@gmail.com",
+    "group": "@prueba",
+    "contact": "@contactoprueba",
     "currency" : "TRX",
     "total_users" : 0,
     "total_withdraw" : 0,
