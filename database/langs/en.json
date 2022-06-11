@@ -49,6 +49,13 @@
     "not_funds": "Not enought funds to make the withdraw",
     "wrong_sum": "Wrong sum",
     "withdrawed": "Withdraw success",
-    "referral_desc": "👥 Users invited: *_REF_*\n🔗 Link : _REF_LINK_ \n📑 Reference levels: *_REF_LVL_*\n💰 Earnings: *_REF_EARN_*",
-    "stadistics_desc": "👥 Total Users: *_TOTAL_USERS_*\n➕Total invests: *_TOTAL_INVEST_ _CURRENCY_*\n➖ Total withdraw: *_TOTAL_WITHDRAW_ _CURRENCY_*"
+    "referral_desc": "👥 Users invited: <b>_REF_</b>\n🔗 Link : _REF_LINK_ \n📑 Reference levels: <b>_REF_LVL_</b>\n💰 Earnings: <b>_REF_EARN_</b>",
+    "stadistics_desc": "👥 Total Users: *_TOTAL_USERS_*\n➕Total invests: *_TOTAL_INVEST_ _CURRENCY_*\n➖ Total withdraw: *_TOTAL_WITHDRAW_ _CURRENCY_*",
+    "calculate": "Calculate",
+    "wrong_num": "Wrong num",
+    "calculate_desc": "Calculate the total earn",
+    "insert_calc": "Insert the desired sum to see the earns:",
+    "calc_desc": "📥 Deposit: *_INVEST_ _CURRENCY_*\n⏳ Invest time: *_INVEST_TIME_*\n💵 Daily earn: *_DAILY_EARN_ _CURRENCY_*\n💰 Total earns: *_TOTAL_EARN_ _CURRENCY_*",
+    "group": "Group",
+    "support_desc": "If you have any doubt , complain or suggest you can make us know to the following ways: \n\n_CONTACT_ _GROUP_ _EMAIL_"
 }

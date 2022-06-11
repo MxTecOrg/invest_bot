@@ -90,7 +90,7 @@ bot.on("message", async (data) => {
     const lang = user.lang;
 
     const char = /^[0-9]+$/;
-    if (!isNan(data.text) || data.text < Bot.get().min_withdraw || data.text > user.balance) return bot.sendMessage(chat_id, S(lang, "wrong_sum"));
+    if (isNaN(data.text) || data.text < Bot.get().min_withdraw || data.text > user.balance) return bot.sendMessage(chat_id, S(lang, "wrong_sum"));
 
     const updt = await user.setData({
         balance: user.balance - data.text

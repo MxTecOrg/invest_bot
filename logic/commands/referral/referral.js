@@ -19,19 +19,19 @@ const referral = async (user_id, chat_id) => {
     const ref_link = "https://t.me/" + Bot.name + "?start=" + user_id;
     const ref = JSON.parse(user.referrals).length;
     const ref_lvl = Bot.ref_levels;
-    const ref_earn = Bot.ref_earns.join("%|");
+    const ref_earn = (ref_lvl > 1 ? Bot.ref_earns.join("%|") : Bot.ref_earns.join("") + "%");
 
 
     const opts = {
-        
+        parse_mode : "html"
     };
 
     const str = I("referral") + _ + S(lang , "referral") + ": \n\n" +
         S(lang, "referral_desc")
         .replace(/_REF_LINK_/g, ref_link)
-        .replace(/_REF_/g, ref)
         .replace(/_REF_LVL_/g, ref_lvl)
-        .replace(/_REF_EARN_/g, ref_earn);
+        .replace(/_REF_EARN_/g, ref_earn)
+        .replace(/_REF_/g, ref);
     bot.sendMessage(chat_id, str, opts);
 };
 

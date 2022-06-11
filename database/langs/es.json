@@ -49,6 +49,13 @@
     "not_funds": "No tienes fondos suficientes para realizar el retiro",
     "wrong_sum" : "Suma incorrecta",
     "withdrawed": "Retiró exitoso",
-    "referral_desc": "👥 Usuarios invitados: *_REF_*\n🔗 Link : _REF_LINK_ \n📑 Niveles de referencia: *_REF_LVL_*\n💰 Ganancias: *_REF_EARN_*",
-    "stadistics_desc" : "👥 Usuarios totales: *_TOTAL_USERS_*\n➕Inversiones totales: *_TOTAL_INVEST_ _CURRENCY_*\n➖ Retiros totales: *_TOTAL_WITHDRAW_ _CURRENCY_*"
+    "referral_desc": "👥 Usuarios invitados: <b>_REF_</b>\n🔗 Link : _REF_LINK_ \n📑 Niveles de referencia: <b>_REF_LVL_</b>\n💰 Ganancias: <b>_REF_EARN_</b>",
+    "stadistics_desc" : "👥 Usuarios totales: *_TOTAL_USERS_*\n➕Inversiones totales: *_TOTAL_INVEST_ _CURRENCY_*\n➖ Retiros totales: *_TOTAL_WITHDRAW_ _CURRENCY_*",
+    "calculate": "Calcular",
+    "wrong_num": "Numero incorrecto",
+    "calculate_desc": "Calcular los ingresos totales",
+    "insert_calc": "Inserte la suma deseada para calcular los ingresos:",
+    "calc_desc": "📥 Depósito: *_INVEST_ _CURRENCY_*\n⏳ Tiempo de contrato: *_INVEST_TIME_*\n💵 Ganancias diarias: *_DAILY_EARN_ _CURRENCY_*\n💰 Ganancias totales: *_TOTAL_EARN_ _CURRENCY_*",
+    "group": "Grupo",
+    "support_desc": "Si tiene alguna duda , queja o sugerencia puede hacerla llegar por las siguientes vias: \n\n_CONTACT_ _GROUP_ _EMAIL_"
 }

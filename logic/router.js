@@ -11,3 +11,5 @@ require(config.LOGIC + "/commands/withdraw/withdraw.js");
 require(config.LOGIC + "/commands/referral/referral.js");
 require(config.LOGIC + "/commands/stadistics/stadistics.js");
 require(config.LOGIC + "/commands/calc/calc.js");
+require(config.LOGIC + "/commands/support/support.js");
+require(config.LOGIC + "/commands/settings/settings.js");

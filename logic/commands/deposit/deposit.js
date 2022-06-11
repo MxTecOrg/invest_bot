@@ -26,7 +26,7 @@ const deposit = async (user_id, chat_id) => {
     
     if(user.wallet == "") return Wallet(user_id , chat_id);
     
-    const str = I("deposit") + _ + S("deposit") + ": \n\n" +
+    const str = I("deposit") + _ + S(lang , "deposit") + ": \n\n" +
     S(lang , "deposit_desc")
     .replace(/_WALLET_/g , wallet)
     .replace(/_CURRENCY_/g , currency)
