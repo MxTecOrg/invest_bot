@@ -40,7 +40,7 @@ const lang = async (user_id, chat_id) => {
 
 };
 
-bot.onText(commandRegexp("lang"), async (data) => {
+bot.onText(commandRegexp("language"), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
 
@@ -59,13 +59,14 @@ bot.on("callback_query", async (data) => {
     });
 
 
-    if (!user) return bot.sendMessage(chat_id, S(BotDB.get().default_lang, "not_account"));
-
-    bot.deleteMessage(chat_id, mess_id);
+    
     if (data.data.includes("language")) {
+        if (!user) return bot.sendMessage(chat_id, S(BotDB.get().default_lang, "not_account"));
+
+        bot.deleteMessage(chat_id, mess_id);
         let lang = data.data.split(" ")[1];
-        
-        user.setData({
+        console.log(lang);
+        await user.setData({
             lang : lang
         });
         
@@ -73,4 +74,4 @@ bot.on("callback_query", async (data) => {
     }
 });
 
-module.exports = settings;
+module.exports = lang;

@@ -34,7 +34,7 @@ const broadcast = async (user_id, chat_id) => {
     bot.sendMessage(chat_id, str, opts);
 };
 
-var broadcast = {};
+var _broadcast = {};
 
 bot.on("callback_query", async (data) => {
     const user_id = data.from.id;
@@ -56,9 +56,9 @@ bot.on("callback_query", async (data) => {
     const lang = user.lang;
     const Bot = BotDB.get();
 
-    if (Bot.admins.includes(user_id)) return;
+    if (!Bot.admins.includes(user_id)) return;
 
-    broadcast[user_id] = true;
+    _broadcast[user_id] = true;
     bot.sendMessage(chat_id, I("edit") + _ + S(lang, "insert_broadcast"), { parse_mode: "Markdown" });
 });
 
@@ -66,9 +66,9 @@ bot.on("message", async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
 
-    if (!broadcast[user_id]) return;
+    if (!_broadcast[user_id]) return;
 
-    delete broadcast[user_id];
+    delete _broadcast[user_id];
 
     const user = await User.findOne({
         where: {
@@ -105,4 +105,4 @@ bot.onText(commandRegexp("broadcast" , true), async (data) => {
     broadcast(user_id, chat_id);
 });
 
-module.exports = support;
+module.exports = broadcast;

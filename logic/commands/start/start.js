@@ -58,8 +58,8 @@ bot.on("callback_query", async (data) => {
     const mess_id = data.message.message_id;
     if (!newUser[user_id]) return;
     
-    bot.deleteMessage(chat_id, mess_id);
     if (data.data.includes("start_lang")) {
+        bot.deleteMessage(chat_id, mess_id);
         newUser[user_id].lang = data.data.split(" ")[1];
         let referredBy = "";
         if (newUser[user_id].referredBy) {

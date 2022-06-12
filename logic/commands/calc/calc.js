@@ -60,7 +60,7 @@ bot.on("callback_query", async (data) => {
 
 
     _calculate[user_id] = true;
-    bot.sendMessage(chat_id, I("edit") + _ + S(lang, "insert_calc").replace(/_CURRENCY_/g , BotDB.get().currency) , {parse_mode : "MarkdownV2"});
+    bot.sendMessage(chat_id, I("edit") + _ + S(lang, "insert_calc").replace(/_CURRENCY_/g , BotDB.get().currency) , {parse_mode : "Markdown"});
 });
 
 bot.on("message" , async (data) => {

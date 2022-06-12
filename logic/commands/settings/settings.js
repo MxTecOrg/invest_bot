@@ -23,7 +23,7 @@ const settings = async (user_id, chat_id) => {
         reply_markup: {
             resize_keyboard: true,
             keyboard: [
-                [I("lang") + _ + S(lang , "language")],
+                [I("language") + _ + S(lang , "language")],
                 [I("menu") + _ + S(lang , "menu")]
             ]
         }

@@ -31,7 +31,7 @@ const withdraw = async (user_id, chat_id) => {
                 [{ text: I("withdraw") + _ + S(lang, "withdraw"), callback_data: "withdraw" }]
             ]
         },
-        parse_mode : "MarkdownV2"
+        parse_mode : "Markdown"
     };
     
     const str = I("withdraw") + _ + S(lang , "withdraw") + ": \n\n" +
