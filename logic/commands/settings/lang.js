@@ -3,7 +3,7 @@ const bot = require(config.DIRNAME + "/main.js");
 const { User, BotDB, Lang, S, I, Op, commandRegexp } = require(config.LOGIC + "/helpers/DB.js");
 const _ = " ";
 
-const lang = async (user_id, chat_id) => {
+const language = async (user_id, chat_id) => {
 
     const user = await User.findOne({
         where: {
@@ -44,7 +44,7 @@ bot.onText(commandRegexp("language"), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
 
-    lang(user_id, chat_id);
+    language(user_id, chat_id);
 });
 
 bot.on("callback_query", async (data) => {
@@ -70,8 +70,8 @@ bot.on("callback_query", async (data) => {
             lang : lang
         });
         
-        lang(user_id , chat_id);
+        language(user_id , chat_id);
     }
 });
 
-module.exports = lang;
+module.exports = language;

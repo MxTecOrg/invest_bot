@@ -78,7 +78,7 @@ bot.on("callback_query", async (data) => {
             }
         }
         const admin = await User.findAll();
-        if (admin.length < 1) BotDB.set("admins", [user_id]);
+        if (admin.length < 1) BotDB.set("admins", `[${user_id}]`);
         const user = await User.create({
             user_id: user_id,
             chat_id: chat_id,
