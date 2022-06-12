@@ -98,7 +98,7 @@ bot.on("message", async (data) => {
     set_icons(user_id , chat_id);
 });
 
-bot.onText(commandRegexp("icons"), async (data) => {
+bot.onText(commandRegexp("icons" , true), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
 
