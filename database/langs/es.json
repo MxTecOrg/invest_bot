@@ -1,11 +1,13 @@
 {
     "lang": "Español",
+    "language": "Lenguage",
     "flag": "🇪🇸",
     "start_lang": "Para continuar al bot por favor seleccione su idioma.",
     "not_account": "Esta cuenta no existe , para crear una presione el comando /start",
     "name": "Nombre",
     "email": "Correo",
     "contact": "Contacto",
+    "admin": "Admin",
     "currency": "Moneda",
     "total_users": "Total de usuarios",
     "total_withdraw": "Total retirado",
@@ -57,5 +59,13 @@
     "insert_calc": "Inserte la suma deseada para calcular los ingresos:",
     "calc_desc": "📥 Depósito: *_INVEST_ _CURRENCY_*\n⏳ Tiempo de contrato: *_INVEST_TIME_*\n💵 Ganancias diarias: *_DAILY_EARN_ _CURRENCY_*\n💰 Ganancias totales: *_TOTAL_EARN_ _CURRENCY_*",
     "group": "Grupo",
-    "support_desc": "Si tiene alguna duda , queja o sugerencia puede hacerla llegar por las siguientes vias: \n\n_CONTACT_ _GROUP_ _EMAIL_"
+    "support_desc": "Si tiene alguna duda , queja o sugerencia puede hacerla llegar por las siguientes vias: \n\n_CONTACT_ _GROUP_ _EMAIL_",
+    "select_lang" : "Seleccione su lenguage:",
+    "icons": "Iconos",
+    "text": "Texto",
+    "general_settings": "Ajustes generales",
+    "broadcast": "Transmitir",
+    "send": "Enviar",
+    "broadcast_desc" : "Enviar mensaje global",
+    "insert_broadcast" : "Inserte el mensaje para transmitir:"
 }

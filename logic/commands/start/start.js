@@ -57,7 +57,7 @@ bot.on("callback_query", async (data) => {
     const chat_id = data.message.chat.id;
     const mess_id = data.message.message_id;
     if (!newUser[user_id]) return;
-    delete newUser[user_id];
+    
     bot.deleteMessage(chat_id, mess_id);
     if (data.data.includes("start_lang")) {
         newUser[user_id].lang = data.data.split(" ")[1];
@@ -89,6 +89,6 @@ bot.on("callback_query", async (data) => {
         BotDB.set("total_users", BotDB.get().total_users + 1);
 
         menu(user_id, chat_id);
-
+        delete newUser[user_id];
     }
 });

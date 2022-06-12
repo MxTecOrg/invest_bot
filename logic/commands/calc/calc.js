@@ -88,17 +88,17 @@ bot.on("message" , async (data) => {
     const invest = Number(data.text);
     const invest_time = (Bot.invest_time < 1 ? S(lang , "undefined") : BotDB.invest_time + S(lang , "days"));
     const daily_earn = Bot.earn * invest / 100;
-    const total_earn = (Bot.invest_time < 1 ? (daily_earn * 30) + _ + S(lang , "month") + _ : daily_earn * Bot.invest_time);
+    const total_earn = (Bot.invest_time < 1 ? (daily_earn * 30) + "/" + S(lang , "month") + "-" : daily_earn * Bot.invest_time);
     
     const str = I("calc") + _ + S(lang , "calc") + ": \n\n"+
     S(lang , "calc_desc")
     .replace(/_CURRENCY_/g , currency)
-    .replace(/_INVEST_/g , invest)
     .replace(/_INVEST_TIME_/g , invest_time)
+    .replace(/_INVEST_/g , invest)
     .replace(/_DAILY_EARN_/g , daily_earn)
     .replace(/_TOTAL_EARN_/g , total_earn);
     
-    bot.sendMessage(chat_id , str , {parse_mode : "MarkdownV2"});
+    bot.sendMessage(chat_id , str , {parse_mode : "Markdown"});
     
     calc(user_id , chat_id);
 });

@@ -48,7 +48,7 @@ const menu = async (user_id, chat_id) => {
 };
 
 
-bot.onText(commandRegexp("menu"), async (data) => {
+bot.onText(commandRegexp("menu" , true), async (data) => {
     const user_id = data.from.id;
     const chat_id = data.chat.id;
 

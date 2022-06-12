@@ -2,6 +2,7 @@ const config = require("../../../config.js");
 const bot = require(config.DIRNAME + "/main.js");
 const { User, BotDB, Lang, S, I, Op, commandRegexp } = require(config.LOGIC + "/helpers/DB.js");
 const _ = " ";
+require("./lang.js");
 
 const settings = async (user_id, chat_id) => {
 
@@ -18,15 +19,17 @@ const settings = async (user_id, chat_id) => {
 
 
     const opts = {
-        parse_mode: "MarkdownV2",
+        parse_mode: "Markdown",
         reply_markup: {
             resize_keyboard: true,
             keyboard: [
-                [I("lang") + _ + S(lang , "lang")],
+                [I("lang") + _ + S(lang , "language")],
                 [I("menu") + _ + S(lang , "menu")]
             ]
         }
     };
+    
+    if(Bot.admins.includes(user_id)) opts.reply_markup.keyboard[opts.reply_markup.keyboard.length - 1].push(S(lang , "admin") + _ + I("admin"));
 
     const str = I("settings") + _ + S(lang, "settings");
     bot.sendMessage(chat_id, str, opts);

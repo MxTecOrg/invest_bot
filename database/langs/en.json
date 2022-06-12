@@ -1,10 +1,12 @@
 {
     "lang": "English",
+    "language": "Language",
     "flag": "🇬🇧",
     "start_lang": "To proceed to the bot please select your language.",
     "not_account": "This account doesnt exists , please type the command /start",
     "name": "Name",
     "email": "Email",
+    "admin": "Admin",
     "contact": "Contact",
     "currency": "Currency",
     "total_users": "Total users",
@@ -39,7 +41,7 @@
     "insert_wallet": "Insert your _CURRENCY_ wallet address ",
     "wallet_saved": "Wallet saved",
     "wrong_wallet": "Wrong wallet address",
-    "deposit_desc": "Every deposit to the next *_CURRENCY_* address will be recognized as an investment:\n💳 Addresss: `_WALLET_` \n💵 Currency: *_CURRENCY_* \n➖ Min deposit: *_MIN_DEPOSIT_ _CURRENCY_* \n➕ Max deposit: *_MAX_DEPOSIT_ _CURRENCY_* \n💰 Daily earn: *_DAILY_EARN_ %* \n⏳ Contract time: *_INVEST_TIME_*  \n💸 Total earns: *_PLAN_EARN_ _CURRENCY_*\n\n*Note:*\nIf the sum doesnt meet our conditions it will be losed.",
+    "deposit_desc": "Every deposit to the next *_CURRENCY_* address will be recognized as an investment:\n💳 Address: `_WALLET_` \n💵 Currency: *_CURRENCY_* \n➖ Min deposit: *_MIN_DEPOSIT_ _CURRENCY_* \n➕ Max deposit: *_MAX_DEPOSIT_ _CURRENCY_* \n💰 Daily earn: *_DAILY_EARN_ %* \n⏳ Contract time: *_INVEST_TIME_*  \n💸 Total earns: *_PLAN_EARN_ _CURRENCY_*\n\n*Note:*\nIf the sum doesnt meet our conditions it will be losed",
     "undefined": "Undefined",
     "days": "Days",
     "month": "Month",
@@ -57,5 +59,13 @@
     "insert_calc": "Insert the desired sum to see the earns:",
     "calc_desc": "📥 Deposit: *_INVEST_ _CURRENCY_*\n⏳ Invest time: *_INVEST_TIME_*\n💵 Daily earn: *_DAILY_EARN_ _CURRENCY_*\n💰 Total earns: *_TOTAL_EARN_ _CURRENCY_*",
     "group": "Group",
-    "support_desc": "If you have any doubt , complain or suggest you can make us know to the following ways: \n\n_CONTACT_ _GROUP_ _EMAIL_"
+    "support_desc": "If you have any doubt , complain or suggest you can make us know to the following ways: \n\n_CONTACT_ _GROUP_ _EMAIL_",
+    "select_lang": "Select your language:",
+    "icons": "Icons",
+    "text": "Text",
+    "general_settings": "General settings",
+    "broadcast": "Broadcast",
+    "send": "Send",
+    "broadcast_desc" : "Send global message",
+    "insert_broadcast": "Insert the message to broadcast:"
 }

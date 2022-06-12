@@ -20,7 +20,7 @@ const support = async (user_id, chat_id) => {
     const email = (Bot.email ? I("email") + _ + S(lang , "email") + ": " + Bot.email + "\n" : "");
 
     const opts = {
-        parse_mode: "MarkdownV2"
+        parse_mode: "html"
     };
 
     const str = I("support") + _ + S(lang , "support") + ": \n\n" +
