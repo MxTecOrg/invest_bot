@@ -65,7 +65,7 @@ bot.on("callback_query", async (data) => {
     if (!user) return bot.sendMessage(chat_id, S(BotDB.get().default_lang, "not_account"));
     const lang = user.lang;
     
-    if(user.balance < Bot.get().min_withdraw) return bot.sendMessage(chat_id , S(lang , "not_funds"));
+    if(user.balance < BotDB.get().min_withdraw) return bot.sendMessage(chat_id , S(lang , "not_funds"));
 
     wtdrw[user_id] = true;
     bot.sendMessage(chat_id, I("edit") + _ + S(lang, "make_withdraw") , { parse_mode: "MarkdownV2" });
@@ -88,9 +88,10 @@ bot.on("message", async (data) => {
 
     if (!user) return bot.sendMessage(chat_id, S(BotDB.get().default_lang, "not_account"));
     const lang = user.lang;
+    const Bot = BotDB.get();
 
     const char = /^[0-9]+$/;
-    if (isNaN(data.text) || data.text < Bot.get().min_withdraw || data.text > user.balance) return bot.sendMessage(chat_id, S(lang, "wrong_sum"));
+    if (isNaN(data.text) || data.text < Bot.min_withdraw || (Number(data.text) + Bot.withdraw_fee)  > user.balance) return bot.sendMessage(chat_id, S(lang, "wrong_sum"));
 
     const updt = await user.setData({
         balance: user.balance - data.text

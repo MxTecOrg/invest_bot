@@ -66,6 +66,10 @@
     "general_settings": "General settings",
     "broadcast": "Broadcast",
     "send": "Send",
-    "broadcast_desc" : "Send global message",
-    "insert_broadcast": "Insert the message to broadcast:"
+    "broadcast_desc": "Send global message",
+    "insert_broadcast": "Insert the message to broadcast:",
+    "icon_desc": "Edit icons:",
+    "insert_icon": "Insert the new icon for *_NAME_* \nActual icon: _ICON_ \nUse /cancel to cancel",
+    "general_settings_desc": "Edit general settings:",
+    "insert_bot_settings": "Insert the new value of *_NAME_* :\nUse /cancel to cancel \nActual value:"
 }

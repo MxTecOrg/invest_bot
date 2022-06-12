@@ -43,7 +43,7 @@ class User extends Model {
         let parsedObj = {};
         for (let o in obj) {
             if (this[o] == undefined) continue;
-            parsedObj[o] = (typeof(obj) === "object" ? JSON.stringify(obj[o]) : obj[o]);
+            parsedObj[o] = (typeof(obj[o]) === "object" ? JSON.stringify(obj[o]) : obj[o]);
         }
         try {
             await this.update(parsedObj);
@@ -80,7 +80,13 @@ const _get = () => {
 };
 
 const _set = (key , value) => {
-    bot_db[key] = value;
+    let v;
+    try{
+        v = JSON.parse(value);
+    }catch(err){
+        v = value;
+    }
+    bot_db[key] = v;
     try{
         fs.writeFileSync(config.DB + "/bot.json" , JSON.stringify(bot_db) , "utf-8");
     }catch(err){
@@ -108,6 +114,10 @@ const getLangs = () => {
     return Object.keys(langs);
 };
 
+const getLangsData = () => {
+    return langs;
+};
+
 const S = (lang , key) => {
     
     return (langs[lang] ? (langs[lang][key] ? langs[lang][key] : "???") : "???");
@@ -121,6 +131,19 @@ var icons;
 
 const iload = () => {
     icons = JSON.parse(fs.readFileSync(config.DB + "/icons.json" , "utf-8"));
+};
+
+const getIconsData = () => {
+    return icons;
+};
+
+const setIconData = (key , value) => {
+    icons[key] = value;
+    try {
+        fs.writeFileSync(config.DB + "/icons.json", JSON.stringify(icons), "utf-8");
+    } catch (err) {
+        console.error(err);
+    }
 };
 
 const I = (icon) => {
@@ -150,10 +173,13 @@ module.exports = {
     },
     Lang : {
         getLangs,
+        get: getLangsData,
         load : load_langs
     },
     Icons : {
-        load : iload
+        load : iload,
+        get : getIconsData,
+        set : setIconData
     },
     S,
     I,

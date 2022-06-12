@@ -35,7 +35,7 @@ const deposit = async (user_id, chat_id) => {
     .replace(/_INVEST_TIME_/g , invest_time)
     .replace(/_DAILY_EARN_/g , daily_earn)
     .replace(/_PLAN_EARN_/g , plan_earn);
-    bot.sendMessage(chat_id , str , {parse_mode : "MarkdownV2"});
+    bot.sendMessage(chat_id , str , {parse_mode : "Markdown"});
 }
 
 bot.onText(commandRegexp("deposit") , async(data) => {

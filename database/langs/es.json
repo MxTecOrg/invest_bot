@@ -67,5 +67,9 @@
     "broadcast": "Transmitir",
     "send": "Enviar",
     "broadcast_desc" : "Enviar mensaje global",
-    "insert_broadcast" : "Inserte el mensaje para transmitir:"
+    "insert_broadcast" : "Inserte el mensaje para transmitir:",
+    "icon_desc" : "Editar iconos:",
+    "insert_icon": "Inserta el nuevo icono para *_NAME_* \nIcono actual: _ICON_ \nPulse /cancel para cancelar",
+    "general_settings_desc": "Editar ajustes generales:",
+    "insert_bot_settings": "Inserte el nuevo valor para *_NAME_* :\nPulse /cancel para cancelar\nValor actual:"
 }

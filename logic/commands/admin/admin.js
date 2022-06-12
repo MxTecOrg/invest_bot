@@ -2,6 +2,8 @@ const config = require("../../../config.js");
 const bot = require(config.DIRNAME + "/main.js");
 const { User, BotDB, I, S, commandRegexp } = require(config.LOGIC + "/helpers/DB.js");
 require("./broadcast.js");
+require("./icons.js");
+rrquire("./bot_settings.js");
 const _ = " ";
 
 bot.onText(commandRegexp("admin", true), async (data) => {
